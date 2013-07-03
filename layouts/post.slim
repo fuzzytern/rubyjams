@@ -1,0 +1,5 @@
+- render 'default' do
+  article
+    h2== item[:title] 
+    aside Posted at #{item[:created_at]}
+    == yield
