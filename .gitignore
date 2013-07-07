@@ -4,3 +4,4 @@ crash.log
 Session.vim
 tmp/
 tags
+.sass-cache/
