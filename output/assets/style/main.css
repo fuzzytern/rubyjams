@@ -1,52 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata|Coming+Soon|Cantora:700);
+/*** VARIABLES DEFINITIONS *** */
+/*** RESETTING WHAT NEEDS TO BE *** */
 * {
   margin: 0;
-  padding: 0;
-  font-family: Georgia, Palatino, Times, "Times New Roman", sans-serif; }
+  padding: 0; }
 
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+/*** DEFAULT LAYOUT STYLE *** */
 body {
-  background: white; }
+  font-size: 11pt;
+  width: 100%;
+  margin: 20px auto;
+  font-family: "Verdana";
+  color: #222222; }
+
+h1, h2 {
+  font-family: "Inconsolata", "Verdana";
+  text-align: right; }
+
+h1 {
+  font-size: 2em; }
+  h1 > :first-child {
+    color: #c00c15; }
 
 a {
   text-decoration: none; }
   a:link, a:visited {
-    color: #ff3300; }
+    color: #c00c15; }
   a:hover {
-    color: #ff9900; }
+    color: #ff5059; }
 
 #main {
-  position: absolute;
-  top: 40px;
-  left: 280px;
+  float: left;
+  margin-left: 30px;
   width: 500px; }
-  #main h1 {
-    font-size: 40px;
-    font-weight: normal;
-    line-height: 40px;
-    letter-spacing: -1px; }
   #main p {
-    margin: 20px 0;
-    font-size: 15px;
-    line-height: 20px; }
-  #main ul, #main ol {
-    margin: 20px; }
-  #main li {
-    font-size: 15px;
-    line-height: 20px; }
-  #main ul li {
-    list-style-type: square; }
+    margin: 10px 0;
+    text-align: justify; }
+  #main h2 {
+    text-align: "right";
+    margin: 20px 20px 10px 0; }
 
 #sidebar {
-  position: absolute;
-  top: 40px;
-  left: 20px;
+  float: left;
   width: 200px;
   padding: 20px 20px 0 0;
   border-right: 1px solid #cccccc;
   text-align: right; }
-  #sidebar h2 {
-    text-transform: uppercase;
-    font-size: 13px;
-    color: #333333;
+  #sidebar h1, #sidebar h2 {
     letter-spacing: 1px;
     line-height: 20px; }
   #sidebar ul {

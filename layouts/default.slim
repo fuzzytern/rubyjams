@@ -3,8 +3,8 @@ html lang="en"
     meta charset="utf-8"
     title
       | A Brand New nanoc Site - #{@item[:title]}
-    link href="/style.css" rel="stylesheet"
+    link href="/assets/style/main.css" rel="stylesheet"
   body
+  == render 'sidebar'
   #main
     == yield
-  == render 'sidebar'

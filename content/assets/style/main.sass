@@ -1,52 +1,72 @@
+// All fonts are under the SIL Open Font License
+// Alternative font to consider for this theme: titles => {Indie Flower, Coming Soon, Cantora}, logo => Londrina Sketch
+@import url(http://fonts.googleapis.com/css?family=Inconsolata|Coming+Soon|Cantora:700)
+
+/**** VARIABLES DEFINITIONS ****/
+//- Colors
+$main-color: #222
+$complementary-color: #C00C15
+$main-color-dim: $main-color + #151515
+//$main-color-dim: #f90
+
+
+
+//- Font families (ff)
+$logo-ff: 'Coming Soon', 'Georgia', 'Arial'
+$title-ff: 'Inconsolata', 'Verdana'
+$body-ff: 'Verdana'
+
+/**** RESETTING WHAT NEEDS TO BE ****/
 *
   margin: 0
   padding: 0
-  font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif
 
+a
+  color: inherit
+  text-decoration: inherit
+
+/**** DEFAULT LAYOUT STYLE ****/
 body
-  background: #fff
+  font-size: 11pt
+  width: 100%
+  margin: 20px auto
+  font-family: $body-ff
+  color: $main-color
+
+h1, h2
+  font-family: $title-ff
+  text-align: right
+
+h1
+  font-size: 2em
+  > :first-child
+    color: $complementary-color
 
 a
   text-decoration: none
   &:link, &:visited
-    color: #f30
+    color: $complementary-color
   &:hover
-    color: #f90
+    color: $complementary-color + #444
 
 #main
-  position: absolute
-  top: 40px
-  left: 280px
+  float: left
+  margin-left: 30px
   width: 500px
-  h1
-    font-size: 40px
-    font-weight: normal
-    line-height: 40px
-    letter-spacing: -1px
   p
-    margin: 20px 0
-    font-size: 15px
-    line-height: 20px
-  ul, ol
-    margin: 20px
-  li
-    font-size: 15px
-    line-height: 20px
-  ul li
-    list-style-type: square
+    margin: 10px 0
+    text-align: justify
+  h2
+    text-align: 'right'
+    margin: 20px 20px 10px 0
 
 #sidebar
-  position: absolute
-  top: 40px
-  left: 20px
+  float: left
   width: 200px
   padding: 20px 20px 0 0
   border-right: 1px solid #ccc
   text-align: right
-  h2
-    text-transform: uppercase
-    font-size: 13px
-    color: #333
+  h1, h2
     letter-spacing: 1px
     line-height: 20px
   ul
