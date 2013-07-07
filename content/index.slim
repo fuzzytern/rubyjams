@@ -2,28 +2,34 @@
 title: Home
 ---
 
-h1 Ruby Jams
+/        | 
+/        | Purpose
+/        | Organisation
+/        | How to join
+/        What
+/        Why
+/        When 
+/        Where
+/        News
+h2 id="presentation" Presentation
+p 
+  | RubyJams is a user group for anyone with an interest in software development and willing to develop their Ruby skills and meet fellow developers. Check the date and place of the next meeting in the 
+  a href="#updates" updates 
+  | section.
 
-h2 Who
-p Anyone with an interest in software development and keen to develop their Ruby skills
+h2 id="purpose" Purpose
+p Unleashing your full potential at developing ruby code requires practice and reflection. Whether you are an advanced Ruby engineer, a casual web developer migrating from another technology or even never wrote a single line of code, the purpose of this group is to make the challenging journey of ruby development fun, exciting and rewarding.
 
-h2 What
-p An evening coding session, where everyone is free to do whatever they want: exercises, pair programing, project development etc...
+h2 id="form" Form
+p Once a week, we organise an evening coding session, where everyone is free to do whatever they want: exercises, pair programing, project development etc... We'll begin each session with an informal (and optional) check-in to get to know each other and to encourage collaboration. The program we follow is improvised as members find new challenges to take and share their ideas, just like a musician would contribute to a jam by playing a few notes.
 
-h2 Why
-p Meeting new ruby folks, sharing skills and creating and encouraging cooperation 
+h2 id="membership" Membership
+p There is no cost or other specific requirements to join RubyJams. Everyone showing up at one of the meetings is a member, until they stop showing up for 4 consecutive weeks or decide to leave. Members participate in the organising of RubyJams events (finding venues, booking a room, organising a specific event etc...) on a voluntary basis.
 
-h2 When & Where
-p every Wednesday evening from 8 to midnight, place to be confirmed in the "update" section or on the mailing list
+h2 id="updates" Updates
 
-ul
-  li
-    p
-      strong Change this pages content
-      | by editing the index.html file in the content directory. This is the actual page content, and therefore doesn't include the header, sidebar or style information (those are part of the layout).
-  li
-    p
-      strong Change the layout
-      | which is the default.html file in the layouts directory, and create something unique (and hopefully less bland).
-
-p If you need any help with customizing your nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!
+- sorted_articles[0, 3].each do |post|
+  article
+    h2== link_to post[:title], post.path
+    aside Posted at #{post[:created_at]}
+    == post.compiled_content
