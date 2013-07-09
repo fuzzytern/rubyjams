@@ -3,7 +3,10 @@
 /*** RESETTING WHAT NEEDS TO BE *** */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
 a {
   color: inherit;
@@ -13,7 +16,6 @@ a {
 body {
   font-size: 11pt;
   width: 100%;
-  margin: 20px auto;
   font-family: "Verdana";
   color: #222222; }
 
@@ -34,9 +36,8 @@ a {
     color: #ff5059; }
 
 #main {
-  float: left;
-  margin-left: 30px;
-  width: 500px; }
+  width: 600px;
+  margin: auto; }
   #main p {
     margin: 10px 0;
     text-align: justify; }
@@ -45,7 +46,9 @@ a {
     margin: 20px 20px 10px 0; }
 
 #sidebar {
-  float: left;
+  position: fixed;
+  left: 50%;
+  margin-left: -530px;
   width: 200px;
   padding: 20px 20px 0 0;
   border-right: 1px solid #cccccc;
@@ -59,3 +62,18 @@ a {
   #sidebar li {
     font-size: 14px;
     line-height: 20px; }
+
+article {
+  position: relative; }
+  article > h2 {
+    text-align: left;
+    line-height: 30px; }
+  article aside {
+    position: absolute;
+    line-height: 30px;
+    font-style: italic;
+    right: 0;
+    top: 0; }
+  article footer {
+    text-align: right;
+    font-style: italic; }

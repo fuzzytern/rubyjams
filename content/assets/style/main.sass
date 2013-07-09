@@ -20,6 +20,9 @@ $body-ff: 'Verdana'
 *
   margin: 0
   padding: 0
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
 
 a
   color: inherit
@@ -29,7 +32,6 @@ a
 body
   font-size: 11pt
   width: 100%
-  margin: 20px auto
   font-family: $body-ff
   color: $main-color
 
@@ -50,9 +52,8 @@ a
     color: $complementary-color + #444
 
 #main
-  float: left
-  margin-left: 30px
-  width: 500px
+  width: 600px
+  margin: auto
   p
     margin: 10px 0
     text-align: justify
@@ -61,7 +62,9 @@ a
     margin: 20px 20px 10px 0
 
 #sidebar
-  float: left
+  position: fixed
+  left: 50%
+  margin-left: -530px
   width: 200px
   padding: 20px 20px 0 0
   border-right: 1px solid #ccc
@@ -75,3 +78,18 @@ a
   li
     font-size: 14px
     line-height: 20px
+
+article 
+  position: relative
+  > h2
+    text-align: left
+    line-height: 30px
+  aside
+    position: absolute
+    line-height: 30px
+    font-style: italic
+    right: 0
+    top: 0
+  footer
+    text-align: right
+    font-style: italic
