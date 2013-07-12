@@ -24,3 +24,13 @@ task :new do
   puts "A new post was created at:"
   puts " \e[32m#{filename}\e[0m"
 end
+
+task :generate do
+  system 'nanoc compile'
+end
+
+desc 'Generate and deploy'
+task :deploy => :generate do
+  sh 'rsync -rtzhv --progress --delete-after output/ deploy@193.183.99.122:/srv/rubyjams.org/production/'
+end
+
