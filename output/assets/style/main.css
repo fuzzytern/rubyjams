@@ -44,6 +44,25 @@ a {
   #main h2 {
     text-align: "right";
     margin: 20px 20px 10px 0; }
+  #main article {
+    position: relative; }
+    #main article > h2 {
+      text-align: left;
+      line-height: 30px; }
+    #main article aside {
+      position: absolute;
+      line-height: 30px;
+      font-style: italic;
+      right: 0;
+      top: 0; }
+    #main article footer {
+      text-align: right;
+      font-style: italic; }
+    #main article ul {
+      list-style-type: square; }
+      #main article ul li {
+        margin-left: 30px;
+        line-height: 25px; }
 
 #sidebar {
   position: fixed;
@@ -62,18 +81,3 @@ a {
   #sidebar li {
     font-size: 14px;
     line-height: 20px; }
-
-article {
-  position: relative; }
-  article > h2 {
-    text-align: left;
-    line-height: 30px; }
-  article aside {
-    position: absolute;
-    line-height: 30px;
-    font-style: italic;
-    right: 0;
-    top: 0; }
-  article footer {
-    text-align: right;
-    font-style: italic; }
