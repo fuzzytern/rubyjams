@@ -5,7 +5,14 @@ html lang="en"
     title
       | RubyJams - #{@item[:title]}
     link href="/assets/style/main.css" rel="stylesheet"
+    link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon"
   body
   == render 'sidebar'
   #main
     == yield
+
+    footer
+      a href="https://github.com/fuzzytern/rubyjams" Fork me on Github
+      | &nbsp;-&nbsp; Contact:&nbsp;
+      a href="mailto:nicolas@cybercrumbs.net" nicolas@cybercrumbs.net
+
