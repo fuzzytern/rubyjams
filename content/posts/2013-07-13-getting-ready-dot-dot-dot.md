@@ -5,7 +5,7 @@ kind: article
 published: false
 ---
 
-Hey everyone, this is the first attempt to help Ruby enthousiasts gather for evening coding jams in Copenhagen, Denmark. If you're reading this and don't live in Copenhagen, you can check [this](https://github.com/fuzzytern/rubyjams) out and create your own RubyJams group in your area in minutes.
+Hey everyone, this is the first attempt to help Ruby enthusiasts gather for evening coding jams in Copenhagen, Denmark. If you're reading this and don't live in Copenhagen, you can check [this](https://github.com/fuzzytern/rubyjams) out and create your own RubyJams group in your area in minutes.
 
 As far as Copenhagen is concerned, our current needs are:
 
