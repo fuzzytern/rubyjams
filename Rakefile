@@ -1,5 +1,10 @@
 require 'stringex'
 
+def post_title? message
+  print message
+  STDIN.gets.chomp
+end
+
 desc "Create a new post"
 task :new do
   title = post_title?('Title: ')
