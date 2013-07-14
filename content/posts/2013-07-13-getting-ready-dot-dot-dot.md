@@ -5,7 +5,7 @@ kind: article
 published: false
 ---
 
-Hey everyone, this is the first attempt to help Ruby enthousiasts gather for evening coding jams in Copenhagen, Denmark. If you're reading this and don't live in Copenhagen, you can check [this]() out and create your own RubyJams group in your area in minutes.
+Hey everyone, this is the first attempt to help Ruby enthousiasts gather for evening coding jams in Copenhagen, Denmark. If you're reading this and don't live in Copenhagen, you can check [this](https://github.com/fuzzytern/rubyjams) out and create your own RubyJams group in your area in minutes.
 
 As far as Copenhagen is concerned, our current needs are:
 
@@ -15,4 +15,4 @@ As far as Copenhagen is concerned, our current needs are:
 
 Please get in touch asap if you want to help to make this a reality.
 
-Nicolas
+*Nicolas*
